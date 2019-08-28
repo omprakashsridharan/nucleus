@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	db "./models/database"
+	db "github.com/omprakashsridharan/nucleus/models"
 )
 
 func main() {
 	fmt.Println("Nucleus - Monitoring")
+	
 }

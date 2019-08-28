@@ -30,10 +30,11 @@ func init() {
 	msql := mysql.Config{}
 	log.Println(msql)
 
-	conn, err := gorm.Open("mysql", username+":"+password+"@tcp("+host+":"+port+")/"+db+"?charset=utf8&parseTime=True&loc=Asia%2FKolkata")
+	_, err := gorm.Open("mysql", username+":"+password+"@tcp("+host+":"+port+")/"+db+"?charset=utf8&parseTime=True&loc=Asia%2FKolkata")
 	if err != nil {
 		fmt.Print(err)
 	}
+	
 }
 
 //CreateSeed Test Data
